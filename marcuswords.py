@@ -4,9 +4,11 @@ import random
 
 meditations = PyPDF2.PdfFileReader("Meditations_ A New Translation ( PDFDrive ).pdf",strict=False)
 page_content = ""
-for page_number in range(52, 159):
-    page = meditations.getPage(page_number)
-    page_content += page.extract_text()
+# give random page numebr 52-159
+pagetodecide = random.randint(52,159)
+# get page content
+page = meditations.getPage(pagetodecide)
+page_content += page.extract_text()
 # get rid of whitespaces\
 page_content = re.sub(r'\s+', ' ', page_content)
 paragraphs = re.split(r'\d+\.', page_content)
