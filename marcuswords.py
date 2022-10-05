@@ -5,18 +5,18 @@ import random
 with open("Meditations_ A New Translation ( PDFDrive ).pdf", "rb") as f:
     meditations = pd2.PdfFileReader(f, strict=False)
     page_content = ""
-    chapter1 = range(44, 52)
-    chapter2 = range(52, 58)
-    chapter3 = range(58, 65)
-    chapter4 = range(65, 76)
-    chapter5 = range(76, 87)
-    chapter6 = range(87, 98)
-    chapter7 = range(98, 109)
-    chapter8 = range(109, 120)
-    chapter9 = range(120, 130)
-    chapter10 = range(130, 141)
-    chapter11 = range(141, 151)
-    chapter12 = range(151, 159)
+    chapter1 = range(44, 51)
+    chapter2 = range(52, 57)
+    chapter3 = range(58, 64)
+    chapter4 = range(65, 75)
+    chapter5 = range(76, 86)
+    chapter6 = range(87, 97)
+    chapter7 = range(98, 108)
+    chapter8 = range(109, 119)
+    chapter9 = range(120, 129)
+    chapter10 = range(130, 140)
+    chapter11 = range(141, 150)
+    chapter12 = range(151, 158)
     chapters = [chapter1, chapter2, chapter3, chapter4, chapter5, chapter6,
                 chapter7, chapter8, chapter9, chapter10, chapter11, chapter12]
     # pick a random chapter
