@@ -1,7 +1,6 @@
 import re
 import PyPDF2 as pd2
 import random
-import pandas as pd
 
 with open("Meditations_ A New Translation ( PDFDrive ).pdf","rb") as f:
     meditations = pd2.PdfFileReader(f, strict=False)
